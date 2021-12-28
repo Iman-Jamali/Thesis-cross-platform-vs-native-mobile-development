@@ -1,0 +1,30 @@
+version: '3.9'
+services:
+  server:
+    image: thesis-api-dev
+    build:
+      context: ./
+      dockerfile: Dockerfile.dev
+    ports:
+      - '5000:3000'
+    volumes:
+      # - .:/app
+      - /app/node_modules
+
+    depends_on:
+      - db
+    networks:
+      - thesis-api-network
+  db:
+    image: postgres
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - '5432:5432'
+    networks:
+      - thesis-api-network
+networks:
+  thesis-api-network:
+    driver: bridge

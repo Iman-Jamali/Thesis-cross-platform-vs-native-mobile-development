@@ -1,0 +1,18 @@
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.formAction {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-around;
+}

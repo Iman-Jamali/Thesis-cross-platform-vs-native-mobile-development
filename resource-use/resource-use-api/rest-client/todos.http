@@ -1,0 +1,26 @@
+POST http://localhost:5000/todos
+Content-Type: application/json
+
+{
+  "title": "t3 u1",
+  "description": "d3 u1",
+  "description1": "d3 u1",
+  "description2": "d3 u1",
+  "description3": "d3 u1"
+}
+###
+GET  http://localhost:5000/todos/2
+###
+DELETE http://localhost:5000/todos/22
+###
+
+PATCH http://localhost:5000/todos/22
+Content-Type: application/json
+
+{
+  "title": "t3 u1",
+  "description": "d3 u1",
+  "description1": "d3 u1",
+  "description2": "d3 u1",
+  "description3": "d3 u1"
+}

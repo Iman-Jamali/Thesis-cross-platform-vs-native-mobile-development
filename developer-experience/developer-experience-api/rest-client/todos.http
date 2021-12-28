@@ -1,0 +1,29 @@
+POST {{thesisApiBaseUrl}}/todos
+Content-Type: application/json
+
+{
+  "title": "todo 2",
+  "description": "description 2"
+}
+
+###
+
+GET  {{thesisApiBaseUrl}}/todos
+###
+
+GET  {{thesisApiBaseUrl}}/todos/58131db8-2d96-47d0-83a6-21605c0b0898
+
+###
+
+PATCH  {{thesisApiBaseUrl}}/todos/707b1744-bb80-4e4d-a714-7ec876b0e5f1
+Content-Type: application/json
+
+{
+  "title": "todo 1 U",
+  "description": "description 1 U"
+}
+
+###
+
+DELETE {{thesisApiBaseUrl}}/todos/707b1744-bb80-4e4d-a714-7ec876b0e5f1
+Content-Type: application/json
